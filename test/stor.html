@@ -2,23 +2,26 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>My Web Page</title>
+  <title>stor.js test</title>
   <script src="../stor.js"></script>
 </head>
 <body>
-  <h1>Welcome to my web page</h1>
+  <h1>Welcome to stor.js test</h1>
   <input type="text" id="myInput">
+  <input type="text" id="myKey" placeholder="Enter a key">
   <button onclick="saveData()">Save Data</button>
   <button onclick="retrieveData()">Retrieve Data</button>
   <script>
     function saveData() {
       var input = document.getElementById('myInput').value;
-      Stor.set('myData', input, {expires: 60});
+      var key = document.getElementById('myKey').value;
+      Stor.set(key, input, {expires: 60});
       console.log('Data saved');
     }
 
     function retrieveData() {
-      var data = Stor.get('myData', 'No data found');
+      var key = document.getElementById('myKey').value;
+      var data = Stor.get(key, 'No data found');
       console.log('Data retrieved:', data);
       alert(data);
     }
