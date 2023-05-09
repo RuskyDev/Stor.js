@@ -11,7 +11,6 @@ or
 ```html
 <script src="https://raw.githubusercontent.com/RuskyDev/Stor.js/main/stor.js"></script>
 ```
-
 To store data, use the `Stor.set()` function:
 
 ```javascript
