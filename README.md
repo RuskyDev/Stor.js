@@ -7,6 +7,11 @@ To use `Stor.js`, include the stor.js file in your HTML file:
 ```html
 <script src="path/to/stor.js"></script>
 ```
+or
+```html
+<script src="https://raw.githubusercontent.com/RuskyDev/Stor.js/main/stor.js"></script>
+```
+
 To store data, use the `Stor.set()` function:
 
 ```javascript
